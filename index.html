@@ -12,8 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/fab-and-nav.css">
 </head>
 <body>
+    <!-- Auth Check -->
+    <script src="assets/js/auth.js"></script>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -227,5 +233,52 @@
             });
         });
     </script>
+
+    <!-- Floating Action Buttons -->
+    <div class="fab-container">
+        <a href="https://classroom.google.com/u/4/c/NzI0NjQwODc0ODU2" target="_blank" class="fab fab-classroom" title="Google Classroom">
+            <i class="fas fa-chalkboard-teacher"></i>
+        </a>
+        <a href="calendario.html" class="fab fab-calendar" title="Calendario">
+            <i class="fas fa-calendar-alt"></i>
+        </a>
+    </div>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav">
+        <ul class="bottom-nav-items">
+            <li class="bottom-nav-item">
+                <a href="index.html" class="bottom-nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="bottom-nav-item">
+                <a href="calendario.html" class="bottom-nav-link ">
+                    <i class="fas fa-calendar"></i>
+                    <span>Calendario</span>
+                </a>
+            </li>
+            <li class="bottom-nav-item">
+                <a href="blog.html" class="bottom-nav-link ">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li class="bottom-nav-item">
+                <a href="info.html" class="bottom-nav-link ">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Info</span>
+                </a>
+            </li>
+            <li class="bottom-nav-item">
+                <a href="dona.html" class="bottom-nav-link ">
+                    <i class="fas fa-heart"></i>
+                    <span>Dona</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
 </body>
 </html>
