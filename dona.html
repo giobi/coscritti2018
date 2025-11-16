@@ -128,41 +128,6 @@
                     </div>
                 </div>
 
-                <!-- Bank Transfer -->
-                <div class="donate-card">
-                    <h3>🏦 Bonifico Bancario</h3>
-                    <p>Preferisci un bonifico tradizionale? Utilizza i dati qui sotto.</p>
-
-                    <div class="bank-details">
-                        <p><strong>Intestatario:</strong> [Nome Rappresentante/Associazione]</p>
-                        <p><strong>IBAN:</strong> IT00 X000 0000 0000 0000 0000 000</p>
-                        <p><strong>Causale:</strong> Donazione Classe 2° Elementare - Coscritti 2018</p>
-                    </div>
-
-                    <div class="alert-box">
-                        <strong><i class="fas fa-exclamation-circle"></i> Importante</strong>
-                        <p>Ricordati di inserire la causale corretta per permetterci di identificare la tua donazione e ringraziarti!</p>
-                    </div>
-
-                    <div class="mt-lg">
-                        <p><strong>Come procedere:</strong></p>
-                        <ul class="info-list">
-                            <li>Accedi alla tua banca online o vai allo sportello</li>
-                            <li>Inserisci l'IBAN indicato sopra</li>
-                            <li>Aggiungi la causale "Donazione Classe 2° Elementare - Coscritti 2018"</li>
-                            <li>Completa il bonifico</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </section>
-
-            <!-- Transparency Section -->
-            <section class="transparency-box">
-                <h3>📊 Trasparenza</h3>
-                <p>Tutte le donazioni ricevute e le spese effettuate vengono rendicontate periodicamente ai genitori della classe.</p>
-                <p>Il resoconto aggiornato è disponibile su richiesta contattando i rappresentanti di classe.</p>
-                <a href="info.html#contatti" class="btn btn-secondary" style="margin-top: var(--spacing-md);">Contatta i Rappresentanti</a>
             </section>
 
             <!-- Thank You Section -->
@@ -211,6 +176,9 @@
             <div class="footer-bottom">
                 <p>&copy; 2025 Coscritti 2018 - Classe Seconda Elementare</p>
                 <p>Made with ❤️ by parents for parents</p>
+                <button id="copyLinkBtn" class="copy-link-btn" title="Copia link pagina">
+                    <i class="fas fa-link"></i> Copia Link
+                </button>
             </div>
         </div>
     </footer>
@@ -237,6 +205,29 @@
                 navToggle.classList.remove('active');
             });
         });
+
+        // Copy link button functionality
+        const copyLinkBtn = document.getElementById('copyLinkBtn');
+        if (copyLinkBtn) {
+            copyLinkBtn.addEventListener('click', async () => {
+                try {
+                    await navigator.clipboard.writeText(window.location.href);
+
+                    // Visual feedback
+                    const originalHTML = copyLinkBtn.innerHTML;
+                    copyLinkBtn.innerHTML = '<i class="fas fa-check"></i> Copiato!';
+                    copyLinkBtn.style.backgroundColor = '#4caf50';
+
+                    setTimeout(() => {
+                        copyLinkBtn.innerHTML = originalHTML;
+                        copyLinkBtn.style.backgroundColor = '';
+                    }, 2000);
+                } catch (err) {
+                    console.error('Errore copia link:', err);
+                    alert('Errore durante la copia del link');
+                }
+            });
+        }
     </script>
 
     <!-- Floating Action Buttons -->
