@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sostieni la classe seconda elementare - Coscritti 2018. Contribuisci alle attività didattiche e ricreative con una donazione.">
+    <title>Dona - Coscritti 2018</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🎒</span>
+                <span class="logo-text">Coscritti 2018</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="info.html">Info Utili</a></li>
+                <li><a href="dona.html" class="nav-cta active">Dona</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>💝 Sostieni la Classe</h1>
+            <p class="lead">Il tuo contributo aiuta a rendere l'anno scolastico più ricco e stimolante per i nostri bambini</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="container">
+
+            <!-- Intro -->
+            <section class="donate-intro">
+                <h2>Grazie per il tuo supporto!</h2>
+                <p>Le donazioni raccolte vengono utilizzate esclusivamente per arricchire l'esperienza scolastica dei bambini con materiali, attività e momenti di condivisione.</p>
+
+                <div class="usage-list">
+                    <div class="usage-item">
+                        <div class="icon">🎨</div>
+                        <h4>Materiale Didattico</h4>
+                        <p>Colori, carta, materiali per laboratori creativi</p>
+                    </div>
+
+                    <div class="usage-item">
+                        <div class="icon">📚</div>
+                        <h4>Biblioteca di Classe</h4>
+                        <p>Libri per arricchire la lettura e l'apprendimento</p>
+                    </div>
+
+                    <div class="usage-item">
+                        <div class="icon">🎉</div>
+                        <h4>Feste e Attività</h4>
+                        <p>Eventi speciali e momenti ricreativi</p>
+                    </div>
+
+                    <div class="usage-item">
+                        <div class="icon">🚌</div>
+                        <h4>Gite Scolastiche</h4>
+                        <p>Supporto per uscite didattiche</p>
+                    </div>
+
+                    <div class="usage-item">
+                        <div class="icon">🎁</div>
+                        <h4>Regali Insegnanti</h4>
+                        <p>Pensieri per le maestre a fine anno</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr style="margin: var(--spacing-xl) 0; border: none; border-top: 2px solid var(--color-bg-warm);">
+
+            <!-- Donation Methods -->
+            <section class="donate-methods">
+
+                <!-- PayPal -->
+                <div class="donate-card">
+                    <h3>💳 Donazione PayPal</h3>
+                    <p>Il metodo più rapido e sicuro per effettuare una donazione online.</p>
+
+                    <div class="paypal-button">
+                        <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                            <input type="hidden" name="hosted_button_id" value="TUO_BUTTON_ID_PAYPAL" />
+                            <input type="image"
+                                   src="https://www.paypalobjects.com/it_IT/IT/i/btn/btn_donateCC_LG.gif"
+                                   border="0"
+                                   name="submit"
+                                   title="PayPal - Il metodo rapido, affidabile e innovativo per pagare e farsi pagare."
+                                   alt="Dona con il pulsante PayPal" />
+                        </form>
+                    </div>
+
+                    <p class="config-note">
+                        <em>Per configurare le donazioni PayPal, sostituire <code>TUO_BUTTON_ID_PAYPAL</code> con l'ID del pulsante generato da PayPal.</em>
+                    </p>
+
+                    <div class="mt-lg">
+                        <p><strong>Vantaggi PayPal:</strong></p>
+                        <ul class="info-list">
+                            <li>Pagamento sicuro e protetto</li>
+                            <li>Conferma immediata della donazione</li>
+                            <li>Carta di credito o conto PayPal</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bank Transfer -->
+                <div class="donate-card">
+                    <h3>🏦 Bonifico Bancario</h3>
+                    <p>Preferisci un bonifico tradizionale? Utilizza i dati qui sotto.</p>
+
+                    <div class="bank-details">
+                        <p><strong>Intestatario:</strong> [Nome Rappresentante/Associazione]</p>
+                        <p><strong>IBAN:</strong> IT00 X000 0000 0000 0000 0000 000</p>
+                        <p><strong>Causale:</strong> Donazione Classe 2° Elementare - Coscritti 2018</p>
+                    </div>
+
+                    <div class="alert-box">
+                        <strong>📝 Importante</strong>
+                        <p>Ricordati di inserire la causale corretta per permetterci di identificare la tua donazione e ringraziarti!</p>
+                    </div>
+
+                    <div class="mt-lg">
+                        <p><strong>Come procedere:</strong></p>
+                        <ul class="info-list">
+                            <li>Accedi alla tua banca online o vai allo sportello</li>
+                            <li>Inserisci l'IBAN indicato sopra</li>
+                            <li>Aggiungi la causale "Donazione Classe 2° Elementare - Coscritti 2018"</li>
+                            <li>Completa il bonifico</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Transparency Section -->
+            <section class="transparency-box">
+                <h3>📊 Trasparenza</h3>
+                <p>Tutte le donazioni ricevute e le spese effettuate vengono rendicontate periodicamente ai genitori della classe.</p>
+                <p>Il resoconto aggiornato è disponibile su richiesta contattando i rappresentanti di classe.</p>
+                <a href="info.html#contatti" class="btn btn-secondary" style="margin-top: var(--spacing-md);">Contatta i Rappresentanti</a>
+            </section>
+
+            <!-- Thank You Section -->
+            <section class="thank-you-section">
+                <h2>Grazie di Cuore! 🙏</h2>
+                <p>Ogni contributo, grande o piccolo, fa davvero la differenza per rendere l'anno scolastico dei nostri bambini più ricco, stimolante e pieno di esperienze positive.</p>
+                <p class="mt-md"><strong>Il tuo supporto è prezioso!</strong></p>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Coscritti 2018</h3>
+                    <p>Portale genitori classe seconda elementare</p>
+                    <p class="footer-tagline">Insieme per i nostri bambini 🎒</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Link Rapidi</h4>
+                    <ul>
+                        <li><a href="calendario.html">Calendario</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="info.html">Info Utili</a></li>
+                        <li><a href="dona.html">Dona</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contatti</h4>
+                    <p>Per informazioni contattare i rappresentanti di classe</p>
+                    <a href="info.html#contatti" class="footer-link">Vedi contatti →</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Informazioni</h4>
+                    <p>Questo sito è gestito dai rappresentanti di classe in collaborazione con i genitori.</p>
+                    <p class="footer-privacy">I dati personali sono trattati secondo le normative vigenti sulla privacy.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Coscritti 2018 - Classe Seconda Elementare</p>
+                <p>Made with ❤️ by parents for parents</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            }
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
