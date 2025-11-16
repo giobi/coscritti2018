@@ -176,6 +176,75 @@
   border-left: 4px solid #c2185b;
 }
 
+/* Projects Section */
+.projects-section {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  border-top: 2px solid var(--color-bg-soft);
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-accent);
+}
+
+.section-intro {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  margin-bottom: var(--spacing-lg);
+  max-width: 800px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.project-card {
+  background-color: var(--color-bg-soft);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  border-top: 3px solid var(--color-accent);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-icon {
+  font-size: 3rem;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.project-card h3 {
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.25rem;
+}
+
+.project-type {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background-color: var(--color-bg-warm);
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-sm);
+}
+
+.project-card > p {
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
 /* Calendar Legend */
 .calendar-legend {
   background-color: var(--color-bg-soft);
@@ -616,7 +685,8 @@
 
   .info-grid,
   .donate-methods,
-  .usage-list {
+  .usage-list,
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 
