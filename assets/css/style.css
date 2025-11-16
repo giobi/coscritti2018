@@ -238,7 +238,7 @@ img {
    =================================== */
 
 .hero {
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-xl) var(--spacing-md);
   background: linear-gradient(135deg, var(--color-bg-warm) 0%, var(--color-bg) 100%);
 }
 
@@ -247,6 +247,8 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-xl);
   align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .hero-text h1 {
