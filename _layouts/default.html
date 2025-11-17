@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pages.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fab-and-nav.css">
+</head>
+<body>
+    <!-- Auth Check -->
+    <script src="{{ site.baseurl }}/assets/js/auth.js"></script>
+
+    <!-- Navigation -->
+    {% include navbar.html %}
+
+    <!-- Page Content -->
+    {{ content }}
+
+    <!-- FAB -->
+    {% include fab.html %}
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav">
+        <ul class="bottom-nav-items">
+            <li class="bottom-nav-item">
+                <a href="{{ site.baseurl }}/index.html" class="bottom-nav-link {% if page.url == '/index.html' %}active{% endif %}">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="bottom-nav-item">
+                <a href="{{ site.baseurl }}/calendario.html" class="bottom-nav-link {% if page.url == '/calendario.html' %}active{% endif %}">
+                    <i class="fas fa-calendar"></i>
+                    <span>Calendario</span>
+                </a>
+            </li>
+            <li class="bottom-nav-item">
+                <a href="{{ site.baseurl }}/blog.html" class="bottom-nav-link {% if page.url == '/blog.html' or layout.name == 'post' %}active{% endif %}">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li class="bottom-nav-item">
+                <a href="https://paypal.me/coscritti2018" target="_blank" class="bottom-nav-link">
+                    <i class="fas fa-heart"></i>
+                    <span>Dona</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+    <!-- Mobile Navigation Script -->
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            }
+        });
+
+        // Close menu when clicking a link
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

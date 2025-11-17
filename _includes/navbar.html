@@ -1,0 +1,19 @@
+<nav class="navbar">
+    <div class="container">
+        <a href="{{ site.baseurl }}/index.html" class="logo">
+            <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
+            <span class="logo-text">Coscritti 2018</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="{{ site.baseurl }}/index.html" {% if page.url == '/index.html' %}class="active"{% endif %}>Home</a></li>
+            <li><a href="{{ site.baseurl }}/calendario.html" {% if page.url == '/calendario.html' %}class="active"{% endif %}>Calendario</a></li>
+            <li><a href="{{ site.baseurl }}/blog.html" {% if page.url == '/blog.html' or layout.name == 'post' %}class="active"{% endif %}>Blog</a></li>
+            <li><a href="https://paypal.me/coscritti2018" target="_blank" class="nav-cta">Dona</a></li>
+        </ul>
+    </div>
+</nav>

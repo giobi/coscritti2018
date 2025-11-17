@@ -1,228 +1,75 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Informazioni utili per i genitori - Coscritti 2018">
-    <title>Info Utili - Coscritti 2018</title>
+---
+layout: default
+title: Info Utili
+description: "Orari scolastici e informazioni pratiche per la classe seconda elementare"
+---
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/pages.css">
-    <link rel="stylesheet" href="assets/css/fab-and-nav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <script src="assets/js/auth.js"></script>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
-                <span class="logo-text">Coscritti 2018</span>
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="calendario.html">Calendario</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="https://paypal.me/coscritti2018" target="_blank" class="nav-cta">Dona</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <header class="page-header">
-        <div class="container">
-            <h1><i class="fas fa-info-circle"></i> Informazioni Utili</h1>
-            <p class="lead">Orari scolastici e informazioni pratiche</p>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="page-content">
-        <div class="container">
-
-            <!-- Orari Scolastici -->
-            <section class="info-section mb-lg">
-                <h2>🏫 Orari Scolastici</h2>
-                <div class="info-card">
-                    <h3>Orario Lezioni</h3>
-                    <ul class="info-list">
-                        <li><strong>Lunedì - Venerdì:</strong> 8:30 - 16:30</li>
-                        <li><strong>Ingresso:</strong> 8:15 - 8:30</li>
-                        <li><strong>Uscita:</strong> 16:30 - 16:45</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Coming Soon Sections -->
-            <section class="coming-soon-grid">
-                <div class="coming-soon-card">
-                    <div class="coming-soon-icon">📞</div>
-                    <h3>Numeri Utili</h3>
-                    <p class="coming-soon-badge">Coming Soon</p>
-                </div>
-
-                <div class="coming-soon-card">
-                    <div class="coming-soon-icon">📋</div>
-                    <h3>Altre Informazioni</h3>
-                    <p class="coming-soon-badge">Coming Soon</p>
-                </div>
-            </section>
-
-            <!-- Gestione Sito -->
-            <section class="info-section mb-lg" style="margin-top: 3rem;">
-                <h2>🤝 Come Funziona Questo Sito</h2>
-                <div class="info-card">
-                    <p>Questo portale è stato creato e viene mantenuto <strong>da un genitore della classe su base volontaria</strong>, nel tempo libero, come contributo alla comunità.</p>
-
-                    <h3 style="margin-top: 1.5rem;">Cosa troverete qui:</h3>
-                    <ul class="info-list">
-                        <li>✅ Calendario eventi aggiornato</li>
-                        <li>✅ Comunicazioni importanti dalle insegnanti</li>
-                        <li>✅ Informazioni utili sempre accessibili</li>
-                        <li>✅ Un punto di riferimento semplice e funzionale</li>
-                    </ul>
-
-                    <h3 style="margin-top: 1.5rem;">Come gestiamo il sito:</h3>
-                    <ul class="info-list">
-                        <li>Aggiornamenti fatti quando possibile, compatibilmente con impegni lavorativi e familiari</li>
-                        <li>Focus su funzionalità essenziali e contenuti utili</li>
-                        <li>Semplicità e affidabilità prima di tutto</li>
-                    </ul>
-
-                    <p style="margin-top: 1.5rem; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
-                        <strong>Per comunicazioni urgenti o segnalazioni importanti</strong>, contattateci tramite i rappresentanti di classe o il gruppo WhatsApp. 💚
-                    </p>
-                </div>
-            </section>
-
-        </div>
-    </main>
-
-    <!-- FAB -->
-    <div class="fab-container">
-        <a href="https://paypal.me/coscritti2018" target="_blank" class="fab" style="background: #0070ba;" title="Dona con PayPal">
-            <i class="fab fa-paypal"></i>
-        </a>
-        <a href="https://classroom.google.com/u/4/c/NzI0NjQwODc0ODU2" target="_blank" class="fab fab-classroom" title="Google Classroom">
-            <i class="fas fa-chalkboard-teacher"></i>
-        </a>
-        <a href="calendario.html" class="fab fab-calendar" title="Calendario">
-            <i class="fas fa-calendar-alt"></i>
-        </a>
+<!-- Page Header -->
+<header class="page-header">
+    <div class="container">
+        <h1><i class="fas fa-info-circle"></i> Informazioni Utili</h1>
+        <p class="lead">Orari scolastici e informazioni pratiche</p>
     </div>
+</header>
 
-    <!-- Bottom Nav -->
-    <nav class="bottom-nav">
-        <ul class="bottom-nav-items">
-                <a href="index.html" class="bottom-nav-link">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
-                </a>
-            </li>
-                <a href="calendario.html" class="bottom-nav-link">
-                    <i class="fas fa-calendar"></i>
-                    <span>Calendario</span>
-                </a>
-            </li>
-                <a href="blog.html" class="bottom-nav-link">
-                    <i class="fas fa-newspaper"></i>
-                    <span>Blog</span>
-                </a>
-            </li>
-                <a href="https://paypal.me/coscritti2018" target="_blank" class="bottom-nav-link">
-                    <i class="fas fa-heart"></i>
-                    <span>Dona</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+<!-- Main Content -->
+<main class="page-content">
+    <div class="container">
 
-    <script>
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.getElementById('navMenu');
+        <!-- Orari Scolastici -->
+        <section class="info-section mb-lg">
+            <h2>🏫 Orari Scolastici</h2>
+            <div class="info-card">
+                <h3>Orario Lezioni</h3>
+                <ul class="info-list">
+                    <li><strong>Lunedì - Venerdì:</strong> 8:30 - 16:30</li>
+                    <li><strong>Ingresso:</strong> 8:15 - 8:30</li>
+                    <li><strong>Uscita:</strong> 16:30 - 16:45</li>
+                </ul>
+            </div>
+        </section>
 
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            navToggle.classList.toggle('active');
-        });
+        <!-- Coming Soon Sections -->
+        <section class="coming-soon-grid">
+            <div class="coming-soon-card">
+                <div class="coming-soon-icon">📞</div>
+                <h3>Numeri Utili</h3>
+                <p class="coming-soon-badge">Coming Soon</p>
+            </div>
 
-        navMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                navToggle.classList.toggle('active');
-            });
-        });
-    </script>
+            <div class="coming-soon-card">
+                <div class="coming-soon-icon">📋</div>
+                <h3>Altre Informazioni</h3>
+                <p class="coming-soon-badge">Coming Soon</p>
+            </div>
+        </section>
 
-    <style>
-        .info-card {
-            background: white;
-            border: 2px solid #e8d5c4;
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 30px;
-        }
+        <!-- Gestione Sito -->
+        <section class="info-section mb-lg" style="margin-top: 3rem;">
+            <h2>🤝 Come Funziona Questo Sito</h2>
+            <div class="info-card">
+                <p>Questo portale è stato creato e viene mantenuto <strong>da un genitore della classe su base volontaria</strong>, nel tempo libero, come contributo alla comunità.</p>
 
-        .info-list {
-            list-style: none;
-            padding: 0;
-        }
+                <h3 style="margin-top: 1.5rem;">Cosa troverete qui:</h3>
+                <ul class="info-list">
+                    <li>✅ Calendario eventi aggiornato</li>
+                    <li>✅ Comunicazioni importanti dalle insegnanti</li>
+                    <li>✅ Informazioni utili sempre accessibili</li>
+                    <li>✅ Un punto di riferimento semplice e funzionale</li>
+                </ul>
 
-        .info-list li {
-            padding: 12px 0;
-            border-bottom: 1px solid #f5f5f5;
-        }
+                <h3 style="margin-top: 1.5rem;">Come gestiamo il sito:</h3>
+                <ul class="info-list">
+                    <li>Aggiornamenti fatti quando possibile, compatibilmente con impegni lavorativi e familiari</li>
+                    <li>Focus su funzionalità essenziali e contenuti utili</li>
+                    <li>Semplicità e affidabilità prima di tutto</li>
+                </ul>
 
-        .info-list li:last-child {
-            border-bottom: none;
-        }
+                <p style="margin-top: 1.5rem; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
+                    <strong>Per comunicazioni urgenti o segnalazioni importanti</strong>, contattateci tramite i rappresentanti di classe o il gruppo WhatsApp. 💚
+                </p>
+            </div>
+        </section>
 
-        .coming-soon-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-            margin: 40px 0;
-        }
-
-        .coming-soon-card {
-            background: linear-gradient(135deg, #fdf8f3 0%, #f5e6d3 100%);
-            border: 2px dashed #e8d5c4;
-            border-radius: 16px;
-            padding: 40px 30px;
-            text-align: center;
-        }
-
-        .coming-soon-icon {
-            font-size: 3rem;
-            margin-bottom: 16px;
-        }
-
-        .coming-soon-card h3 {
-            color: #4a3f35;
-            margin-bottom: 12px;
-        }
-
-        .coming-soon-badge {
-            display: inline-block;
-            background: #e67e50;
-            color: white;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-top: 8px;
-        }
-    </style>
-</body>
-</html>
+    </div>
+</main>

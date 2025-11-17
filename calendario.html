@@ -1,188 +1,96 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Calendario scolastico classe seconda elementare - Coscritti 2018.">
-    <title>Calendario - Coscritti 2018</title>
+---
+layout: default
+title: Calendario
+description: "Calendario scolastico classe seconda elementare - Coscritti 2018"
+custom_css: pages.css
+---
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/pages.css">
-    <link rel="stylesheet" href="assets/css/fab-and-nav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <script src="assets/js/auth.js"></script>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
-                <span class="logo-text">Coscritti 2018</span>
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="calendario.html" class="active">Calendario</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="https://paypal.me/coscritti2018" target="_blank" class="nav-cta">Dona</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <header class="page-header">
-        <div class="container">
-            <h1><i class="fas fa-calendar-alt"></i> Calendario Scolastico</h1>
-            <p class="lead">Eventi, ricorrenze e appuntamenti importanti per la classe</p>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="page-content">
-        <div class="container">
-
-            <!-- Google Calendar Embed Section -->
-            <section class="calendar-embed mb-lg">
-                <div class="calendar-container">
-                    <iframe src="https://calendar.google.com/calendar/embed?src=49a918f78275c7a1ddad809741bb1698e276cfe7393c2670865961e1dcf6cccf%40group.calendar.google.com&ctz=Europe%2FRome" style="border: 0; width: 100%; height: 600px; border-radius: 12px;" frameborder="0" scrolling="no"></iframe>
-                </div>
-            </section>
-
-            <!-- Projects Section -->
-            <section class="projects-section">
-                <h2><i class="fas fa-project-diagram"></i> Progetti Anno Scolastico 2025/2026</h2>
-                <p class="section-intro">Oltre alle uscite didattiche, la classe 2^ partecipa a diversi progetti educativi durante l'anno:</p>
-
-                <div class="projects-banner" style="margin-bottom: 2rem;">
-                    <img src="assets/images/m02Dk8J.png" alt="Striscione PACE - Lavori creativi classe 2018" style="width: 100%; max-width: 800px; height: auto; border-radius: 12px; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                </div>
-
-                <div class="projects-grid">
-                    <!-- Progetto DIDEROT -->
-                    <div class="project-card">
-                        <div class="project-icon"><i class="fas fa-book-reader"></i></div>
-                        <h3>Progetto DIDEROT</h3>
-                        <p class="project-type"><i class="fas fa-gift"></i> Gratuito</p>
-                        <p>Programma di didattica innovativa che offre percorsi formativi gratuiti su varie discipline, dalla matematica alle lingue, dalla sostenibilità all'arte.</p>
-                    </div>
-
-                    <!-- MUSICA E MOVIMENTO -->
-                    <div class="project-card">
-                        <div class="project-icon"><i class="fas fa-music"></i></div>
-                        <h3>Musica e Movimento</h3>
-                        <p class="project-type"><i class="fas fa-landmark"></i> Finanziato dal Comune</p>
-                        <p>Percorso di educazione musicale e motoria che sostituisce Giocosport, con attività ludiche per sviluppare coordinazione e senso del ritmo.</p>
-                    </div>
-
-                    <!-- GIOCOSPORT -->
-                    <div class="project-card">
-                        <div class="project-icon"><i class="fas fa-running"></i></div>
-                        <h3>Giocosport</h3>
-                        <p class="project-type"><i class="fas fa-landmark"></i> Finanziato dal Comune</p>
-                        <p>Progetto di educazione motoria che introduce i bambini a diverse discipline sportive attraverso il gioco e l'attività fisica.</p>
-                    </div>
-
-                    <!-- LEGAMBIENTE -->
-                    <div class="project-card">
-                        <div class="project-icon"><i class="fas fa-leaf"></i></div>
-                        <h3>Legambiente - Puliamo il Mondo</h3>
-                        <p class="project-type"><i class="fas fa-gift"></i> Gratuito</p>
-                        <p>Iniziativa di educazione ambientale che coinvolge i bambini nella pulizia di spazi pubblici, insegnando il rispetto per l'ambiente e la cittadinanza attiva.</p>
-                    </div>
-
-                    <!-- BABYGAME -->
-                    <div class="project-card">
-                        <div class="project-icon"><i class="fas fa-gamepad"></i></div>
-                        <h3>Babygame</h3>
-                        <p class="project-type"><i class="fas fa-gift"></i> Gratuito</p>
-                        <p>Progetto ludico-educativo che utilizza il gioco come strumento di apprendimento, favorendo socializzazione e sviluppo cognitivo.</p>
-                    </div>
-
-                    <!-- EDUCAZIONE STRADALE -->
-                    <div class="project-card">
-                        <div class="project-icon"><i class="fas fa-traffic-light"></i></div>
-                        <h3>Educazione Stradale</h3>
-                        <p class="project-type"><i class="fas fa-info-circle"></i> Programma scolastico</p>
-                        <p>Percorso per insegnare ai bambini le regole della strada, la sicurezza come pedoni e ciclisti, e i comportamenti corretti nel traffico.</p>
-                    </div>
-
-                    <!-- CCRR -->
-                    <div class="project-card">
-                        <div class="project-icon"><i class="fas fa-users"></i></div>
-                        <h3>CCRR - Consiglio Comunale Ragazzi</h3>
-                        <p class="project-type"><i class="fas fa-gift"></i> Gratuito</p>
-                        <p>Progetto di educazione civica che permette ai bambini di sperimentare la partecipazione democratica e di proporre iniziative per la propria città.</p>
-                    </div>
-                </div>
-            </section>
-
-        </div>
-    </main>
-
-    <!-- FAB -->
-    <div class="fab-container">
-        <a href="https://paypal.me/coscritti2018" target="_blank" class="fab" style="background: #0070ba;" title="Dona con PayPal">
-            <i class="fab fa-paypal"></i>
-        </a>
-        <a href="https://classroom.google.com/u/4/c/NzI0NjQwODc0ODU2" target="_blank" class="fab fab-classroom" title="Google Classroom">
-            <i class="fas fa-chalkboard-teacher"></i>
-        </a>
-        <a href="calendario.html" class="fab fab-calendar" title="Calendario">
-            <i class="fas fa-calendar-alt"></i>
-        </a>
+<!-- Page Header -->
+<header class="page-header">
+    <div class="container">
+        <h1><i class="fas fa-calendar-alt"></i> Calendario Scolastico</h1>
+        <p class="lead">Eventi, ricorrenze e appuntamenti importanti per la classe</p>
     </div>
+</header>
 
-    <!-- Bottom Nav -->
-    <nav class="bottom-nav">
-        <ul class="bottom-nav-items">
-                <a href="index.html" class="bottom-nav-link">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
-                </a>
-            </li>
-                <a href="calendario.html" class="bottom-nav-link active">
-                    <i class="fas fa-calendar"></i>
-                    <span>Calendario</span>
-                </a>
-            </li>
-                <a href="blog.html" class="bottom-nav-link">
-                    <i class="fas fa-newspaper"></i>
-                    <span>Blog</span>
-                </a>
-            </li>
-                <a href="https://paypal.me/coscritti2018" target="_blank" class="bottom-nav-link">
-                    <i class="fas fa-heart"></i>
-                    <span>Dona</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+<!-- Main Content -->
+<main class="page-content">
+    <div class="container">
 
-    <script>
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.getElementById('navMenu');
+        <!-- Google Calendar Embed Section -->
+        <section class="calendar-embed mb-lg">
+            <div class="calendar-container">
+                <iframe src="https://calendar.google.com/calendar/embed?src=49a918f78275c7a1ddad809741bb1698e276cfe7393c2670865961e1dcf6cccf%40group.calendar.google.com&ctz=Europe%2FRome" style="border: 0; width: 100%; height: 600px; border-radius: 12px;" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </section>
 
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            navToggle.classList.toggle('active');
-        });
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <h2><i class="fas fa-project-diagram"></i> Progetti Anno Scolastico 2025/2026</h2>
+            <p class="section-intro">Oltre alle uscite didattiche, la classe 2^ partecipa a diversi progetti educativi durante l'anno:</p>
 
-        navMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                navToggle.classList.remove('active');
-            });
-        });
-    </script>
-</body>
-</html>
+            <div class="projects-banner" style="margin-bottom: 2rem;">
+                <img src="{{ site.baseurl }}/assets/images/m02Dk8J.png" alt="Striscione PACE - Lavori creativi classe 2018" style="width: 100%; max-width: 800px; height: auto; border-radius: 12px; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            </div>
+
+            <div class="projects-grid">
+                <!-- Progetto DIDEROT -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-book-reader"></i></div>
+                    <h3>Progetto DIDEROT</h3>
+                    <p class="project-type"><i class="fas fa-gift"></i> Gratuito</p>
+                    <p>Programma di didattica innovativa che offre percorsi formativi gratuiti su varie discipline, dalla matematica alle lingue, dalla sostenibilità all'arte.</p>
+                </div>
+
+                <!-- MUSICA E MOVIMENTO -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-music"></i></div>
+                    <h3>Musica e Movimento</h3>
+                    <p class="project-type"><i class="fas fa-landmark"></i> Finanziato dal Comune</p>
+                    <p>Percorso di educazione musicale e motoria che sostituisce Giocosport, con attività ludiche per sviluppare coordinazione e senso del ritmo.</p>
+                </div>
+
+                <!-- GIOCOSPORT -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-running"></i></div>
+                    <h3>Giocosport</h3>
+                    <p class="project-type"><i class="fas fa-landmark"></i> Finanziato dal Comune</p>
+                    <p>Progetto di educazione motoria che introduce i bambini a diverse discipline sportive attraverso il gioco e l'attività fisica.</p>
+                </div>
+
+                <!-- LEGAMBIENTE -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Legambiente - Puliamo il Mondo</h3>
+                    <p class="project-type"><i class="fas fa-gift"></i> Gratuito</p>
+                    <p>Iniziativa di educazione ambientale che coinvolge i bambini nella pulizia di spazi pubblici, insegnando il rispetto per l'ambiente e la cittadinanza attiva.</p>
+                </div>
+
+                <!-- BABYGAME -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3>Babygame</h3>
+                    <p class="project-type"><i class="fas fa-gift"></i> Gratuito</p>
+                    <p>Progetto ludico-educativo che utilizza il gioco come strumento di apprendimento, favorendo socializzazione e sviluppo cognitivo.</p>
+                </div>
+
+                <!-- EDUCAZIONE STRADALE -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-traffic-light"></i></div>
+                    <h3>Educazione Stradale</h3>
+                    <p class="project-type"><i class="fas fa-info-circle"></i> Programma scolastico</p>
+                    <p>Percorso per insegnare ai bambini le regole della strada, la sicurezza come pedoni e ciclisti, e i comportamenti corretti nel traffico.</p>
+                </div>
+
+                <!-- CCRR -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-users"></i></div>
+                    <h3>CCRR - Consiglio Comunale Ragazzi</h3>
+                    <p class="project-type"><i class="fas fa-gift"></i> Gratuito</p>
+                    <p>Progetto di educazione civica che permette ai bambini di sperimentare la partecipazione democratica e di proporre iniziative per la propria città.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>

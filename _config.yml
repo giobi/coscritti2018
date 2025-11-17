@@ -1,0 +1,29 @@
+title: "Coscritti 2018 - Classe 2° Elementare"
+description: "Portale genitori classe seconda elementare"
+baseurl: ""
+url: "https://coscritti2018.it"
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:year-:month-:day-:title.html
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Build settings
+markdown: kramdown
+timezone: Europe/Rome
+lang: it-IT
+
+# Exclude
+exclude:
+  - README.md
+  - docs/
+  - agents.md

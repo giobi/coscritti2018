@@ -1,0 +1,85 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Coscritti 2018</h3>
+                <p>Portale genitori classe seconda elementare</p>
+                <p class="footer-tagline">Insieme per i nostri bambini <i class="fas fa-graduation-cap"></i></p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Link Rapidi</h4>
+                <ul>
+                    <li><a href="{{ site.baseurl }}/calendario.html">Calendario</a></li>
+                    <li><a href="{{ site.baseurl }}/blog.html">Blog</a></li>
+                    <li><a href="https://paypal.me/coscritti2018" target="_blank">Dona</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contatti</h4>
+                <p>Per informazioni contattare i rappresentanti di classe</p>
+                <button id="copyTokenLink" class="btn-copy-token" title="Copia link di accesso">
+                    <i class="fas fa-link"></i> Copia link accesso
+                </button>
+            </div>
+
+            <div class="footer-section">
+                <h4>🌐 Gestione Sito</h4>
+                <p>Questo sito è realizzato e mantenuto da un genitore volontario nel tempo libero. Facciamo del nostro meglio per tenerlo aggiornato, ma chiediamo comprensione per eventuali limiti. 💚</p>
+                <p class="footer-note"><small>Per segnalazioni urgenti: gruppo WhatsApp genitori</small></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Coscritti 2018 - Classe Seconda Elementare</p>
+            <p>Made with ❤️ by parents for parents</p>
+        </div>
+    </div>
+</footer>
+
+<style>
+.btn-copy-token {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--accent, #8b6f47);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.btn-copy-token:hover {
+    background: var(--accent-secondary, #d4a574);
+    transform: translateY(-2px);
+}
+
+.btn-copy-token i {
+    margin-right: 0.3rem;
+}
+</style>
+
+<script>
+document.getElementById('copyTokenLink').addEventListener('click', function() {
+    const token = '8c121210dde619fb32da41bdb2ffbc1ff51ca4558705f00351318eb5cd783195';
+    const link = window.location.origin + '/?token=' + token;
+
+    navigator.clipboard.writeText(link).then(function() {
+        const btn = document.getElementById('copyTokenLink');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check"></i> Copiato!';
+        btn.style.background = '#4caf50';
+
+        setTimeout(function() {
+            btn.innerHTML = originalText;
+            btn.style.background = '';
+        }, 2000);
+    }).catch(function(err) {
+        alert('Errore nella copia: ' + err);
+    });
+});
+</script>

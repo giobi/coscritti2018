@@ -1,209 +1,44 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog classe seconda elementare - Coscritti 2018. Comunicazioni, aggiornamenti e notizie dalla classe.">
-    <title>Blog - Coscritti 2018</title>
+---
+layout: default
+title: Blog
+description: "Comunicazioni, aggiornamenti e notizie per la classe seconda elementare"
+custom_css: pages.css
+---
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/pages.css">
-    <link rel="stylesheet" href="assets/css/fab-and-nav.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <!-- Auth Check -->
-    <script src="assets/js/auth.js"></script>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
-                <span class="logo-text">Coscritti 2018</span>
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="calendario.html">Calendario</a></li>
-                <li><a href="blog.html" class="active">Blog</a></li>
-                <li><a href="https://paypal.me/coscritti2018" target="_blank" class="nav-cta">Dona</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <header class="page-header">
-        <div class="container">
-            <h1><i class="fas fa-newspaper"></i> Blog</h1>
-            <p class="lead">Comunicazioni, aggiornamenti e notizie dalla classe</p>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="page-content">
-        <div class="container">
-
-            <!-- Blog Grid -->
-            <div class="blog-grid">
-
-                <!-- Post: Verbale Prima Riunione -->
-                <article class="blog-post">
-                    <div class="blog-post-image">
-                        <img src="assets/images/riunione-genitori-2025-11.png"
-                             alt="Riunione genitori novembre 2025">
-                    </div>
-                    <div class="blog-post-content">
-                        <div class="blog-post-meta">
-                            <span class="date">16 Novembre 2025</span>
-                            <span class="category">Comunicazioni</span>
-                        </div>
-                        <h3>Verbale Prima Riunione Genitori</h3>
-                        <p class="blog-post-excerpt">Resoconto della riunione genitori del 10 novembre: progetti didattici, uscite programmate, gestione fondi e novità organizzative per l'anno scolastico 2025-2026.</p>
-                        <a href="2025-11-16-verbale-prima-riunione-genitori.html" class="read-more">Leggi tutto →</a>
-                    </div>
-                </article>
-
-                <!-- Post: Cena Fine Novembre -->
-                <article class="blog-post">
-                    <div class="blog-post-image">
-                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800&auto=format&fit=crop"
-                             alt="Cena insieme">
-                    </div>
-                    <div class="blog-post-content">
-                        <div class="blog-post-meta">
-                            <span class="date">16 Novembre 2025</span>
-                            <span class="category">Eventi</span>
-                        </div>
-                        <h3>Cena di Fine Novembre</h3>
-                        <p class="blog-post-excerpt">Organizzazione cena genitori a fine novembre (probabilmente in Piadineria a Gravellona). Data e dettagli da definire insieme nel gruppo WhatsApp.</p>
-                        <a href="2025-11-16-cena-fine-novembre.html" class="read-more">Leggi tutto →</a>
-                    </div>
-                </article>
-
-            </div>
-
-            <!-- Jekyll Integration Note -->
-            <div class="no-posts" style="display: none;">
-                <div class="icon"><i class="fas fa-newspaper"></i></div>
-                <h3>Nessun Post Ancora</h3>
-                <p>I post del blog verranno pubblicati qui. Torna a visitarci presto!</p>
-                <p class="mt-md"><em>Questo sito utilizza Jekyll per la gestione dei contenuti. I post vengono generati automaticamente dalla cartella <code>_posts/</code>.</em></p>
-            </div>
-
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Coscritti 2018</h3>
-                    <p>Portale genitori classe seconda elementare</p>
-                    <p class="footer-tagline">Insieme per i nostri bambini <i class="fas fa-graduation-cap"></i></p>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Link Rapidi</h4>
-                    <ul>
-                        <li><a href="calendario.html">Calendario</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="https://paypal.me/coscritti2018" target="_blank">Dona</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Contatti</h4>
-                    <p>Per informazioni contattare i rappresentanti di classe</p>
-                    <a href="info.html#contatti" class="footer-link">Vedi contatti →</a>
-                </div>
-
-                <div class="footer-section">
-                    <h4>🌐 Gestione Sito</h4>
-                    <p>Questo sito è realizzato e mantenuto da un genitore volontario nel tempo libero. Facciamo del nostro meglio per tenerlo aggiornato, ma chiediamo comprensione per eventuali limiti. 💚</p>
-                    <p class="footer-note"><small>Per segnalazioni urgenti: gruppo WhatsApp genitori</small></p>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Coscritti 2018 - Classe Seconda Elementare</p>
-                <p>Made with ❤️ by parents for parents</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.getElementById('navMenu');
-
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            navToggle.classList.toggle('active');
-        });
-
-        document.addEventListener('click', (e) => {
-            if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
-                navMenu.classList.remove('active');
-                navToggle.classList.remove('active');
-            }
-        });
-
-        navMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                navToggle.classList.remove('active');
-            });
-        });
-    </script>
-
-    <!-- Floating Action Buttons -->
-    <div class="fab-container">
-        <a href="https://paypal.me/coscritti2018" target="_blank" class="fab" style="background: #0070ba;" title="Dona con PayPal">
-            <i class="fab fa-paypal"></i>
-        </a>
-        <a href="https://classroom.google.com/u/4/c/NzI0NjQwODc0ODU2" target="_blank" class="fab fab-classroom" title="Google Classroom">
-            <i class="fas fa-chalkboard-teacher"></i>
-        </a>
-        <a href="calendario.html" class="fab fab-calendar" title="Calendario">
-            <i class="fas fa-calendar-alt"></i>
-        </a>
+<!-- Page Header -->
+<header class="page-header">
+    <div class="container">
+        <h1><i class="fas fa-newspaper"></i> Blog</h1>
+        <p class="lead">Comunicazioni, aggiornamenti e notizie per la classe</p>
     </div>
+</header>
 
-    <!-- Mobile Bottom Navigation -->
-    <nav class="bottom-nav">
-        <ul class="bottom-nav-items">
-                <a href="index.html" class="bottom-nav-link ">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
-                </a>
-            </li>
-                <a href="calendario.html" class="bottom-nav-link ">
-                    <i class="fas fa-calendar"></i>
-                    <span>Calendario</span>
-                </a>
-            </li>
-                <a href="blog.html" class="bottom-nav-link active">
-                    <i class="fas fa-newspaper"></i>
-                    <span>Blog</span>
-                </a>
-            </li>
-                <a href="https://paypal.me/coscritti2018" target="_blank" class="bottom-nav-link ">
-                    <i class="fas fa-heart"></i>
-                    <span>Dona</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+<!-- Main Content -->
+<main class="page-content">
+    <div class="container">
 
-</body>
-</html>
+        <!-- Blog Grid -->
+        <div class="blog-grid">
+
+            {% for post in site.posts %}
+            <article class="blog-post">
+                <div class="blog-post-image">
+                    <img src="{{ site.baseurl }}/{{ post.image }}"
+                         alt="{{ post.title }}">
+                </div>
+                <div class="blog-post-content">
+                    <div class="blog-post-meta">
+                        <span class="date">{{ post.date | date: "%-d %B %Y" }}</span>
+                        <span class="category">{{ post.category }}</span>
+                    </div>
+                    <h3>{{ post.title }}</h3>
+                    <p class="blog-post-excerpt">{{ post.content | strip_html | truncatewords: 30 }}</p>
+                    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leggi tutto →</a>
+                </div>
+            </article>
+            {% endfor %}
+
+        </div>
+
+    </div>
+</main>
