@@ -1,5 +1,8 @@
 <!-- Floating Action Buttons -->
 <div class="fab-container">
+    <button id="copyPageLink" class="fab" style="background: #8b6f47; border: none; cursor: pointer;" title="Copia link pagina">
+        <i class="fas fa-link"></i>
+    </button>
     <a href="https://paypal.me/coscritti2018" target="_blank" class="fab" style="background: #0070ba;" title="Dona con PayPal">
         <i class="fab fa-paypal"></i>
     </a>
@@ -10,3 +13,25 @@
         <i class="fas fa-calendar-alt"></i>
     </a>
 </div>
+
+<script>
+document.getElementById('copyPageLink').addEventListener('click', function() {
+    const token = '8c121210dde619fb32da41bdb2ffbc1ff51ca4558705f00351318eb5cd783195';
+    const currentUrl = window.location.origin + window.location.pathname + '?token=' + token;
+    const btn = this;
+    const originalIcon = btn.innerHTML;
+
+    navigator.clipboard.writeText(currentUrl).then(function() {
+        btn.innerHTML = '<i class="fas fa-check"></i>';
+        btn.style.background = '#0f9d58';
+
+        setTimeout(function() {
+            btn.innerHTML = originalIcon;
+            btn.style.background = '#8b6f47';
+        }, 2000);
+    }).catch(function(err) {
+        console.error('Errore copia:', err);
+        alert('Link copiato: ' + currentUrl);
+    });
+});
+</script>
