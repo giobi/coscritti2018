@@ -39,13 +39,14 @@ Portale web per genitori della classe seconda elementare (Coscritti 2018).
 - SHA256 token: `8c121210dde619fb32da41bdb2ffbc1ff51ca4558705f00351318eb5cd783195`
 - Access URL: `https://coscritti2018.it/?token={token}`
 
-### Why Static HTML (No Jekyll)
+### Why Jekyll
 
-✅ `.nojekyll` file presente - Jekyll processing disabilitato
-✅ Zero build step - push = live immediato
-✅ Performance - no server-side processing
-✅ Simplicità - HTML puro, facile da mantenere
-✅ Adatto per progetto small-scale (2 blog post, 6 pagine)
+✅ **DRY Architecture** - navbar/footer/FAB in un solo posto
+✅ **Auto-generate** - blog post list auto-updated
+✅ **Easy maintenance** - modifica layout una volta, cambia ovunque
+✅ **Markdown posts** - più facile scrivere contenuti
+✅ **GitHub Pages native** - build automatico, zero config
+✅ **Scalable** - facile aggiungere post senza duplicare HTML
 
 ---
 
@@ -53,12 +54,22 @@ Portale web per genitori della classe seconda elementare (Coscritti 2018).
 
 ```
 coscritti2018/
-├── index.html              # Homepage
-├── calendario.html         # Calendario + progetti educativi
-├── blog.html              # Lista post blog
-├── info.html              # Informazioni utili + disclaimer
+├── _config.yml            # Jekyll configuration
+├── _layouts/
+│   ├── default.html       # Main layout (navbar, footer, FAB)
+│   └── post.html          # Blog post layout
+├── _includes/
+│   ├── navbar.html        # Reusable navbar
+│   ├── footer.html        # Reusable footer (with copy token button)
+│   └── fab.html           # Reusable FAB
+├── _posts/
+│   ├── 2025-11-16-verbale-prima-riunione-genitori.md
+│   └── 2025-11-16-cena-fine-novembre.md
+├── index.html             # Homepage (Jekyll frontmatter)
+├── calendario.html        # Calendario (Jekyll frontmatter)
+├── blog.html              # Lista post (auto-loop from _posts/)
+├── info.html              # Informazioni utili
 ├── gate.html              # Token auth gate
-├── 2025-11-16-*.html      # Blog posts (static files)
 ├── assets/
 │   ├── css/
 │   │   ├── style.css      # Main styles
@@ -118,8 +129,13 @@ coscritti2018/
 - Fat footer con 4 sezioni:
   1. Logo + tagline
   2. Link rapidi
-  3. Contatti
+  3. Contatti + **Copy Token Button**
   4. Gestione sito (disclaimer volontariato)
+
+**Copy Token Button**:
+- JavaScript button che copia link di accesso con token
+- Visual feedback: "Copiato!" per 2 secondi
+- Stile coerente con design system
 
 ---
 
@@ -194,19 +210,31 @@ https://calendar.google.com/calendar/embed?src=49a918f78275c7a1ddad809741bb1698e
 
 ### Blog Posts
 
-**Format**: Static HTML files (non Jekyll)
-**Naming**: `YYYY-MM-DD-slug.html`
-**Location**: Root directory
+**Format**: Markdown files with YAML frontmatter
+**Naming**: `YYYY-MM-DD-slug.md`
+**Location**: `_posts/` directory
 
 **Current posts**:
-1. `2025-11-16-verbale-prima-riunione-genitori.html`
-2. `2025-11-16-cena-fine-novembre.html`
+1. `_posts/2025-11-16-verbale-prima-riunione-genitori.md`
+2. `_posts/2025-11-16-cena-fine-novembre.md`
 
-**Post structure**:
-- Header con background image + overlay
-- Post meta (date, category)
-- Content sections
-- Footer with back-to-blog link
+**Frontmatter structure**:
+```yaml
+---
+layout: post
+title: "Post Title"
+date: 2025-11-16
+category: Comunicazioni
+excerpt: "Short description"
+image: assets/images/photo.jpg
+---
+```
+
+**Adding a new post**:
+1. Create `_posts/YYYY-MM-DD-slug.md`
+2. Add frontmatter (layout, title, date, category, excerpt, image)
+3. Write content in markdown
+4. Commit and push → auto-appears in blog list
 
 ### Images
 
@@ -259,7 +287,7 @@ https://calendar.google.com/calendar/embed?src=49a918f78275c7a1ddad809741bb1698e
 - ✅ Provisioned and enforced
 - HTTPS funzionante su coscritti2018.it
 
-**Build**: None (static files serviti direttamente)
+**Build**: Jekyll automatic (GitHub Pages processes on push)
 
 ### DNS Configuration
 

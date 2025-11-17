@@ -1,7 +1,7 @@
 # AI Agent Instructions - Coscritti 2018
 
 **Project**: Coscritti 2018 portale genitori
-**Tech Stack**: Static HTML/CSS/JS (no Jekyll)
+**Tech Stack**: Jekyll + HTML/CSS/JS
 **Last Updated**: 2025-11-17
 
 ---
@@ -34,7 +34,10 @@ Prima di modificare il sito, controlla:
 
 ### 1. FAB (Floating Action Buttons)
 
-**MUST BE IDENTICAL in all HTML files**:
+**Defined ONCE in** `_includes/fab.html`:
+All pages using `layout: default` automatically include FAB.
+
+**Standard FAB structure**:
 
 ```html
 <!-- Floating Action Buttons -->
@@ -51,21 +54,14 @@ Prima di modificare il sito, controlla:
 </div>
 ```
 
-**Check command**:
-```bash
-grep -A 10 'fab-container' *.html | grep -E 'paypal|classroom|calendario'
-```
-
-**Files to check**:
-- `index.html`
-- `blog.html`
-- `calendario.html`
-- `info.html`
-- `2025-11-16-*.html` (blog posts)
+**To modify**: Edit `_includes/fab.html` once → changes propagate to all pages
 
 ### 2. Navbar Top
 
-**Desktop nav MUST have these 5 links** (in order):
+**Defined ONCE in** `_includes/navbar.html`:
+All pages using `layout: default` automatically include navbar.
+
+**Standard navbar structure**:
 
 ```html
 <ul class="nav-menu" id="navMenu">
@@ -77,19 +73,16 @@ grep -A 10 'fab-container' *.html | grep -E 'paypal|classroom|calendario'
 </ul>
 ```
 
-**Rules**:
-- `class="active"` only on current page
-- `nav-cta` class on Dona link
-- Dona link must be `https://paypal.me/coscritti2018` with `target="_blank"`
+**Active state**: Automatically handled via Jekyll `{% if page.url == '/index.html' %}` conditionals
 
-**Check command**:
-```bash
-grep -A 6 'nav-menu' index.html | grep -E 'paypal|calendario|blog|info'
-```
+**To modify**: Edit `_includes/navbar.html` once → changes propagate to all pages
 
 ### 3. Mobile Bottom Nav
 
-**MUST have 5 items** (order: Home, Calendario, Blog, Info, Dona):
+**Defined in** `_layouts/default.html`:
+Automatically included on all pages.
+
+**Standard structure**:
 
 ```html
 <nav class="bottom-nav">
@@ -128,13 +121,16 @@ grep -A 6 'nav-menu' index.html | grep -E 'paypal|calendario|blog|info'
 </nav>
 ```
 
-**Rules**:
-- `class="active"` only on current page
-- Dona link must be PayPal with `target="_blank"`
+**Active state**: Automatically handled via Jekyll conditionals
+
+**To modify**: Edit `_layouts/default.html` bottom-nav section
 
 ### 4. Footer
 
-**MUST have 4 sections**:
+**Defined ONCE in** `_includes/footer.html`:
+All pages automatically include footer.
+
+**Standard footer structure (4 sections)**:
 
 1. **Logo + tagline**:
 ```html
@@ -176,10 +172,9 @@ grep -A 6 'nav-menu' index.html | grep -E 'paypal|calendario|blog|info'
 </div>
 ```
 
-**Check command**:
-```bash
-grep -A 5 'footer-section' index.html | grep -E 'Gestione Sito|volontario|💚'
-```
+**Copy Token Button**: Included in Contatti section, copies `https://coscritti2018.it/?token=...`
+
+**To modify**: Edit `_includes/footer.html` once → changes propagate to all pages
 
 ### 5. Footer Bottom
 
@@ -195,31 +190,33 @@ grep -A 5 'footer-section' index.html | grep -E 'Gestione Sito|volontario|💚'
 
 ## 🔍 Validation Scripts
 
-### Quick Consistency Check
+### Quick Jekyll Structure Check
 
 ```bash
 #!/bin/bash
 # Run from project root
 
-echo "=== Checking FAB consistency ==="
-for file in index.html blog.html calendario.html info.html; do
-    echo "--- $file ---"
-    grep -c 'paypal.me/coscritti2018' "$file" || echo "❌ PayPal FAB missing!"
-done
+echo "=== Checking Jekyll structure ==="
+[ -f "_config.yml" ] && echo "✅ _config.yml" || echo "❌ Missing _config.yml"
+[ -d "_layouts" ] && echo "✅ _layouts/" || echo "❌ Missing _layouts/"
+[ -d "_includes" ] && echo "✅ _includes/" || echo "❌ Missing _includes/"
+[ -d "_posts" ] && echo "✅ _posts/" || echo "❌ Missing _posts/"
 
 echo ""
-echo "=== Checking navbar Dona link ==="
-for file in index.html blog.html calendario.html info.html; do
-    echo "--- $file ---"
-    grep 'nav-cta' "$file" | grep -c 'paypal' || echo "❌ Dona nav link wrong!"
-done
+echo "=== Checking includes ==="
+[ -f "_includes/navbar.html" ] && echo "✅ navbar.html" || echo "❌ Missing navbar.html"
+[ -f "_includes/footer.html" ] && echo "✅ footer.html" || echo "❌ Missing footer.html"
+[ -f "_includes/fab.html" ] && echo "✅ fab.html" || echo "❌ Missing fab.html"
 
 echo ""
-echo "=== Checking footer disclaimer ==="
-for file in index.html blog.html calendario.html info.html; do
-    echo "--- $file ---"
-    grep -c 'volontario' "$file" || echo "❌ Footer disclaimer missing!"
-done
+echo "=== Checking layouts ==="
+[ -f "_layouts/default.html" ] && echo "✅ default.html" || echo "❌ Missing default.html"
+[ -f "_layouts/post.html" ] && echo "✅ post.html" || echo "❌ Missing post.html"
+
+echo ""
+echo "=== Checking posts ==="
+post_count=$(find _posts -name "*.md" 2>/dev/null | wc -l)
+echo "📝 Found $post_count blog posts in _posts/"
 ```
 
 ### Full Structure Validation
@@ -286,12 +283,27 @@ fi
 
 ### Adding a New Blog Post
 
-1. **Create HTML file**: `YYYY-MM-DD-slug.html` in root
-2. **Use template**: Copy structure from existing post
-3. **Update homepage**: Add to "Latest Updates" section
-4. **Update blog.html**: Add to post list
-5. **Check FAB**: Ensure standard FAB included
-6. **Commit**: Descriptive message
+**With Jekyll** (EASY!):
+1. **Create markdown file**: `_posts/YYYY-MM-DD-slug.md`
+2. **Add frontmatter**:
+   ```yaml
+   ---
+   layout: post
+   title: "Post Title"
+   date: 2025-11-16
+   category: Comunicazioni
+   excerpt: "Short description"
+   image: assets/images/photo.jpg
+   ---
+   ```
+3. **Write content**: Use markdown syntax
+4. **Commit and push**: Auto-appears in blog list!
+
+**No need to**:
+- ❌ Manually update homepage
+- ❌ Manually update blog.html
+- ❌ Copy HTML template
+- ❌ Add navbar/footer/FAB (layout handles it)
 
 ### Updating Images
 
@@ -303,12 +315,16 @@ fi
 
 ### Modifying Navigation
 
-**CRITICAL**: If you change navbar structure:
+**With Jekyll** (EASY!):
 
-1. **Update ALL pages** (5 main + 2 blog posts)
-2. **Check consistency** using validation scripts
-3. **Test mobile nav** (bottom-nav)
-4. **Verify FAB** not affected
+1. **Edit** `_includes/navbar.html` **ONCE**
+2. **Push** → changes propagate to ALL pages automatically
+3. **Test** mobile nav still works (in `_layouts/default.html`)
+
+**No need to**:
+- ❌ Update 5+ HTML files manually
+- ❌ Search/replace across files
+- ❌ Check consistency manually
 
 ---
 
@@ -316,20 +332,22 @@ fi
 
 ### DO NOT
 
-❌ Re-add Jekyll files (`_config.yml`, `Gemfile`, etc.)
+❌ Create `.nojekyll` (disables Jekyll!)
+❌ Modify navbar/footer/FAB in individual pages (use includes!)
 ❌ Create `dona.html` (Dona → PayPal direct)
 ❌ Use placeholder images (use real class photos)
-❌ Break FAB consistency across pages
 ❌ Remove footer disclaimer
 ❌ Add analytics/tracking (privacy-first)
+❌ Create HTML blog posts in root (use `_posts/*.md`)
 
 ### ALWAYS
 
-✅ Use `.nojekyll` (already present)
-✅ Test locally before commit
-✅ Check consistency after changes
-✅ Keep FAB/navbar/footer identical
+✅ Use Jekyll layouts and includes (DRY!)
+✅ Create blog posts in `_posts/` as markdown
+✅ Test locally with `jekyll serve` if possible
+✅ Edit navbar/footer/FAB in `_includes/` ONCE
 ✅ Update `docs/project-specs.md` if architecture changes
+✅ Commit frontmatter-compliant markdown for posts
 
 ---
 
@@ -341,7 +359,7 @@ fi
 
 **Before pushing**:
 ```bash
-# 1. Run consistency check
+# 1. Run Jekyll structure check
 bash validation-script.sh
 
 # 2. Check git status
@@ -355,7 +373,7 @@ git commit -m "Your descriptive message"
 git push origin main
 ```
 
-**Live in**: ~2-5 minutes
+**Live in**: ~2-5 minutes (includes Jekyll build time ~30s)
 
 ---
 
