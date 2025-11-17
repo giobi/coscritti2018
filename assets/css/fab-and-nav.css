@@ -29,6 +29,13 @@
     text-decoration: none;
 }
 
+.fab i {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
 .fab:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 16px rgba(230, 126, 80, 0.5);
