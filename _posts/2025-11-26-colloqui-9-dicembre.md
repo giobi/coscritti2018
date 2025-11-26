@@ -4,6 +4,7 @@ title: "Colloqui 9 Dicembre"
 date: 2025-11-26
 category: Scuola
 excerpt: "Colloqui genitori-insegnanti previsti per il 9 dicembre"
+image: assets/images/colloqui-genitori.png
 ---
 
 ## Colloqui Genitori-Insegnanti
