@@ -103,6 +103,21 @@ image: assets/images/colloqui-genitori.png
     border-left: 4px solid #e87d3e;
 }
 
+/* Admin delete button */
+.btn-delete {
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.btn-delete:hover {
+    background: #dc2626;
+}
+
 /* Tabella prenotazioni */
 .prenotazioni-table {
     width: 100%;
@@ -222,11 +237,15 @@ Ogni colloquio dura **8 minuti**. Seleziona la fascia oraria preferita inserendo
 
     <div id="messageBox" class="message"></div>
 
-    <div class="form-version">v6</div>
+    <div class="form-version">v7</div>
 </div>
 
 <script>
 const API_URL = 'https://coscritti-colloqui-api.giobi.workers.dev';
+
+// Check admin mode
+const urlParams = new URLSearchParams(window.location.search);
+const isAdmin = urlParams.get('command') === 'admin';
 
 const FASCE = [
     '15.00-15.08', '15.08-15.16', '15.16-15.24', '15.24-15.32', '15.32-15.40',
@@ -263,9 +282,10 @@ function renderTable() {
 
         if (info.prenotata) {
             tr.className = 'occupata';
+            const deleteBtn = isAdmin ? `<button class="btn-delete" onclick="deletePrenotazione('${fascia}', '${info.cognome}')"><i class="fas fa-trash"></i></button>` : '';
             tr.innerHTML = `
                 <td><span class="status-dot taken"></span>${fascia}</td>
-                <td>${info.cognome || '-'}</td>
+                <td>${info.cognome || '-'} ${deleteBtn}</td>
             `;
         } else {
             tr.className = 'disponibile';
@@ -336,6 +356,28 @@ document.getElementById('colloquiForm').addEventListener('submit', async (e) => 
         submitBtn.innerHTML = '<i class="fas fa-check"></i> Conferma Prenotazione';
     }
 });
+
+async function deletePrenotazione(fascia, cognome) {
+    if (!confirm(`Eliminare la prenotazione di ${cognome} per ${fascia}?`)) return;
+
+    try {
+        const response = await fetch(`${API_URL}/elimina`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ fascia: fascia, cognome: cognome })
+        });
+        const data = await response.json();
+
+        if (data.success) {
+            showMessage(`Prenotazione di ${cognome} eliminata`, 'success');
+            await loadDisponibilita();
+        } else {
+            showMessage(data.error || 'Errore eliminazione', 'error');
+        }
+    } catch (error) {
+        showMessage('Errore di connessione', 'error');
+    }
+}
 
 document.addEventListener('DOMContentLoaded', loadDisponibilita);
 </script>
