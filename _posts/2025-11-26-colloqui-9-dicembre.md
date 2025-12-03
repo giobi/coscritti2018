@@ -222,7 +222,7 @@ Ogni colloquio dura **8 minuti**. Seleziona la fascia oraria preferita inserendo
 
     <div id="messageBox" class="message"></div>
 
-    <div class="form-version">v5</div>
+    <div class="form-version">v6</div>
 </div>
 
 <script>
@@ -302,6 +302,11 @@ document.getElementById('colloquiForm').addEventListener('submit', async (e) => 
 
     if (!cognome) { showMessage('Inserisci il cognome', 'error'); return; }
     if (!selectedFascia) { showMessage('Seleziona una fascia oraria cliccando sulla riga', 'error'); return; }
+
+    // Conferma prima di inviare
+    if (!confirm(`Confermi la prenotazione?\n\nCognome: ${cognome}\nFascia: ${selectedFascia}`)) {
+        return;
+    }
 
     const submitBtn = document.getElementById('submitBtn');
     submitBtn.disabled = true;
