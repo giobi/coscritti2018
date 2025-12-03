@@ -101,6 +101,7 @@ image: assets/images/colloqui-genitori.png
     margin-bottom: 1rem;
     font-size: 0.9rem;
     border-left: 4px solid #e87d3e;
+    color: #5c4813;
 }
 
 /* Admin delete button */
@@ -237,7 +238,7 @@ Ogni colloquio dura **8 minuti**. Seleziona la fascia oraria preferita inserendo
 
     <div id="messageBox" class="message"></div>
 
-    <div class="form-version">v7</div>
+    <div class="form-version">v8</div>
 </div>
 
 <script>
