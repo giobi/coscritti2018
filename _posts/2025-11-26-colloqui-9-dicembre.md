@@ -41,60 +41,6 @@ image: assets/images/colloqui-genitori.png
     border-color: #e87d3e;
 }
 
-.fasce-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-}
-
-.fascia-option {
-    position: relative;
-}
-
-.fascia-option input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.fascia-option label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.6rem;
-    background: #f5f5f5;
-    border: 2px solid #e5e5e5;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
-    text-align: center;
-}
-
-.fascia-option input[type="radio"]:checked + label {
-    background: #e87d3e;
-    color: white;
-    border-color: #e87d3e;
-}
-
-.fascia-option input[type="radio"]:disabled + label {
-    background: #ffebee;
-    color: #c62828;
-    border-color: #ef9a9a;
-    cursor: not-allowed;
-    text-decoration: line-through;
-}
-
-.fascia-option label:hover {
-    border-color: #e87d3e;
-}
-
-.fascia-option input[type="radio"]:disabled + label:hover {
-    border-color: #ef9a9a;
-}
-
 .btn-submit {
     width: 100%;
     padding: 0.9rem;
@@ -148,40 +94,6 @@ image: assets/images/colloqui-genitori.png
     color: #666;
 }
 
-.legend {
-    display: flex;
-    gap: 1rem;
-    margin: 0.5rem 0;
-    font-size: 0.8rem;
-    flex-wrap: wrap;
-}
-
-.legend-item {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-
-.legend-dot {
-    width: 14px;
-    height: 14px;
-    border-radius: 4px;
-}
-
-.legend-dot.available {
-    background: #f5f5f5;
-    border: 2px solid #e5e5e5;
-}
-
-.legend-dot.selected {
-    background: #e87d3e;
-}
-
-.legend-dot.taken {
-    background: #ffebee;
-    border: 2px solid #ef9a9a;
-}
-
 .info-box {
     background: #fef3e2;
     padding: 0.8rem;
@@ -189,6 +101,81 @@ image: assets/images/colloqui-genitori.png
     margin-bottom: 1rem;
     font-size: 0.9rem;
     border-left: 4px solid #e87d3e;
+}
+
+/* Tabella prenotazioni */
+.prenotazioni-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+}
+
+.prenotazioni-table th,
+.prenotazioni-table td {
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.prenotazioni-table th {
+    background: #f5f5f5;
+    font-weight: 600;
+    color: #2d2416;
+}
+
+.prenotazioni-table tr:hover {
+    background: #faf8f5;
+}
+
+.prenotazioni-table tr.disponibile {
+    cursor: pointer;
+}
+
+.prenotazioni-table tr.disponibile:hover {
+    background: #fef3e2;
+}
+
+.prenotazioni-table tr.occupata {
+    background: #ffebee;
+}
+
+.prenotazioni-table tr.occupata td {
+    color: #666;
+}
+
+.prenotazioni-table tr.selected {
+    background: #e87d3e !important;
+    color: white;
+}
+
+.prenotazioni-table tr.selected td {
+    color: white;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.status-dot.available {
+    background: #4ade80;
+}
+
+.status-dot.taken {
+    background: #ef4444;
+}
+
+.form-version {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #999;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #eee;
 }
 </style>
 
@@ -203,7 +190,7 @@ Ogni colloquio dura **8 minuti**. Seleziona la fascia oraria preferita inserendo
 <div class="colloqui-form-container">
     <div class="info-box">
         <i class="fas fa-info-circle"></i>
-        <strong>Attenzione:</strong> Ogni fascia puo essere prenotata da un solo genitore. Le fasce occupate appaiono barrate.
+        <strong>Attenzione:</strong> Puoi prenotare una sola fascia per cognome. Per modifiche contatta il rappresentante di classe.
     </div>
 
     <form id="colloquiForm">
@@ -213,15 +200,19 @@ Ogni colloquio dura **8 minuti**. Seleziona la fascia oraria preferita inserendo
         </div>
 
         <div class="form-group">
-            <label><i class="fas fa-clock"></i> Fascia oraria</label>
-            <div class="legend">
-                <div class="legend-item"><span class="legend-dot available"></span> Disponibile</div>
-                <div class="legend-item"><span class="legend-dot selected"></span> Selezionata</div>
-                <div class="legend-item"><span class="legend-dot taken"></span> Occupata</div>
-            </div>
-            <div id="fasceContainer" class="fasce-container">
-                <div class="loading"><i class="fas fa-spinner fa-spin"></i> Caricamento...</div>
-            </div>
+            <label><i class="fas fa-clock"></i> Seleziona la fascia oraria (clicca sulla riga)</label>
+            <table class="prenotazioni-table" id="prenotazioniTable">
+                <thead>
+                    <tr>
+                        <th style="width: 40%">Orario</th>
+                        <th>Cognome</th>
+                    </tr>
+                </thead>
+                <tbody id="fasceTableBody">
+                    <tr><td colspan="2" class="loading"><i class="fas fa-spinner fa-spin"></i> Caricamento...</td></tr>
+                </tbody>
+            </table>
+            <input type="hidden" id="selectedFascia" name="fascia">
         </div>
 
         <button type="submit" class="btn-submit" id="submitBtn">
@@ -230,6 +221,8 @@ Ogni colloquio dura **8 minuti**. Seleziona la fascia oraria preferita inserendo
     </form>
 
     <div id="messageBox" class="message"></div>
+
+    <div class="form-version">v3</div>
 </div>
 
 <script>
@@ -243,6 +236,7 @@ const FASCE = [
 ];
 
 let disponibilita = {};
+let selectedFascia = null;
 
 async function loadDisponibilita() {
     try {
@@ -250,25 +244,50 @@ async function loadDisponibilita() {
         const data = await response.json();
         disponibilita = {};
         data.fasce.forEach(f => {
-            disponibilita[f.fascia] = f.prenotata;
+            disponibilita[f.fascia] = { prenotata: f.prenotata, cognome: f.cognome || null };
         });
-        renderFasce();
+        renderTable();
     } catch (error) {
         console.error('Errore:', error);
-        document.getElementById('fasceContainer').innerHTML = '<p style="color:#c62828;">Errore nel caricamento. Riprova.</p>';
+        document.getElementById('fasceTableBody').innerHTML = '<tr><td colspan="2" style="color:#c62828;">Errore nel caricamento. Riprova.</td></tr>';
     }
 }
 
-function renderFasce() {
-    const container = document.getElementById('fasceContainer');
-    container.innerHTML = '';
-    FASCE.forEach((fascia, index) => {
-        const isPrenotata = disponibilita[fascia];
-        const div = document.createElement('div');
-        div.className = 'fascia-option';
-        div.innerHTML = `<input type="radio" id="fascia_${index}" name="fascia" value="${fascia}" ${isPrenotata ? 'disabled' : ''}><label for="fascia_${index}">${fascia}</label>`;
-        container.appendChild(div);
+function renderTable() {
+    const tbody = document.getElementById('fasceTableBody');
+    tbody.innerHTML = '';
+
+    FASCE.forEach((fascia) => {
+        const info = disponibilita[fascia] || { prenotata: false, cognome: null };
+        const tr = document.createElement('tr');
+
+        if (info.prenotata) {
+            tr.className = 'occupata';
+            tr.innerHTML = `
+                <td><span class="status-dot taken"></span>${fascia}</td>
+                <td>${info.cognome || '-'}</td>
+            `;
+        } else {
+            tr.className = 'disponibile';
+            tr.innerHTML = `
+                <td><span class="status-dot available"></span>${fascia}</td>
+                <td><em style="color:#999">Disponibile</em></td>
+            `;
+            tr.addEventListener('click', () => selectFascia(fascia, tr));
+        }
+
+        tbody.appendChild(tr);
     });
+}
+
+function selectFascia(fascia, row) {
+    // Deselect previous
+    document.querySelectorAll('.prenotazioni-table tr.selected').forEach(r => r.classList.remove('selected'));
+
+    // Select new
+    row.classList.add('selected');
+    selectedFascia = fascia;
+    document.getElementById('selectedFascia').value = fascia;
 }
 
 function showMessage(text, type) {
@@ -280,10 +299,9 @@ function showMessage(text, type) {
 document.getElementById('colloquiForm').addEventListener('submit', async (e) => {
     e.preventDefault();
     const cognome = document.getElementById('cognome').value.trim();
-    const selectedFascia = document.querySelector('input[name="fascia"]:checked');
 
     if (!cognome) { showMessage('Inserisci il cognome', 'error'); return; }
-    if (!selectedFascia) { showMessage('Seleziona una fascia oraria', 'error'); return; }
+    if (!selectedFascia) { showMessage('Seleziona una fascia oraria cliccando sulla riga', 'error'); return; }
 
     const submitBtn = document.getElementById('submitBtn');
     submitBtn.disabled = true;
@@ -293,12 +311,14 @@ document.getElementById('colloquiForm').addEventListener('submit', async (e) => 
         const response = await fetch(`${API_URL}/prenota`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ cognome_alunno: cognome, fasce_selezionate: [selectedFascia.value] })
+            body: JSON.stringify({ cognome_alunno: cognome, fasce_selezionate: [selectedFascia] })
         });
         const data = await response.json();
 
         if (data.success) {
-            showMessage(`Prenotazione confermata per ${cognome} - Fascia: ${selectedFascia.value}`, 'success');
+            showMessage(`Prenotazione confermata per ${cognome} - Fascia: ${selectedFascia}`, 'success');
+            selectedFascia = null;
+            document.getElementById('selectedFascia').value = '';
             await loadDisponibilita();
             document.getElementById('cognome').value = '';
         } else {
