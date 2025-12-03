@@ -293,7 +293,7 @@ document.getElementById('colloquiForm').addEventListener('submit', async (e) => 
         const response = await fetch(`${API_URL}/prenota`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ cognome_alunno: cognome, fasce: [selectedFascia.value] })
+            body: JSON.stringify({ cognome_alunno: cognome, fasce_selezionate: [selectedFascia.value] })
         });
         const data = await response.json();
 
