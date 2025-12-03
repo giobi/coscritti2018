@@ -222,7 +222,7 @@ Ogni colloquio dura **8 minuti**. Seleziona la fascia oraria preferita inserendo
 
     <div id="messageBox" class="message"></div>
 
-    <div class="form-version">v3</div>
+    <div class="form-version">v4</div>
 </div>
 
 <script>
@@ -311,7 +311,7 @@ document.getElementById('colloquiForm').addEventListener('submit', async (e) => 
         const response = await fetch(`${API_URL}/prenota`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ cognome_alunno: cognome, fasce_selezionate: [selectedFascia] })
+            body: JSON.stringify({ cognome: cognome, fascia: selectedFascia })
         });
         const data = await response.json();
 
