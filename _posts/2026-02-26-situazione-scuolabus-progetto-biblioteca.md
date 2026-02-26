@@ -83,6 +83,8 @@ Il risultato è che un progetto **già finanziato dal Comune**, già organizzato
 
 Le insegnanti hanno fatto tutto quello che potevano: richiesta formale, coinvolgimento del Sindaco di Baveno, contestazione scritta della contraddizione con novembre. La segreteria — come già per la questione dell'insegnante di alternativa alla religione, rimasta scoperta per mesi — impiega settimane a rispondere quando risponde. La situazione è arrivata ai sindacati di categoria, che nella scuola pubblica non è una cosa che succede tutti i giorni: significa che le insegnanti hanno esaurito le strade normali.
 
+La DSGA (Direttrice dei Servizi Generali e Amministrativi — la figura che gestisce la parte amministrativa e organizzativa della scuola) sta cercando una soluzione con l'assicurazione dell'istituto per coprire il trasporto delle insegnanti con mezzi propri. È un passo avanti e speriamo si concretizzi in fretta.
+
 Il punto è che non stiamo parlando solo della biblioteca. Ci aspettano altri 3 anni di elementari e 3 di medie con questa gestione. Oggi è lo scuolabus, domani sarà qualcos'altro. Per la nostra classe è il secondo episodio, ma guardando all'istituto nel suo complesso è l'ennesimo ostruzionismo. Le insegnanti stanno facendo un lavoro enorme nonostante gli ostacoli, ma non possiamo contare sul fatto che debbano lottare ogni volta per fare il loro lavoro.
 
 Per ora vi chiedo solo di essere informati sulla questione e di sentirvi liberi di chiedere chiarimenti, perché le insegnanti si stanno muovendo in ogni modo possibile.
