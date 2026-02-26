@@ -7,17 +7,73 @@ excerpt: "Aggiornamento sulla problematica che impedisce alla nostra classe di p
 image: assets/images/m02Dk8J.png
 ---
 
+<style>
+.post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.post-content thead th {
+    background: #8b6f47;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.post-content tbody td {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid #e8e0d4;
+}
+
+.post-content tbody tr:nth-child(even) {
+    background: #faf6f0;
+}
+
+.post-content tbody tr:hover {
+    background: #f0e8da;
+}
+
+.post-content tbody tr.bloccata td {
+    color: #b91c1c;
+    font-weight: 600;
+}
+
+@media (max-width: 640px) {
+    .post-content table {
+        font-size: 0.85rem;
+    }
+    .post-content thead th,
+    .post-content tbody td {
+        padding: 0.5rem 0.6rem;
+    }
+}
+</style>
+
 Ciao a tutti,
 
 vi aggiorno su una situazione che riguarda la nostra classe. In breve: **non parteciperemo al progetto biblioteca** perché il Dirigente Scolastico non autorizza l'uso dello scuolabus per classi con più di 15 alunni. Noi siamo in 20. La 4a ha lo stesso problema. Le classi 1a, 3a e 5a invece possono andare.
 
-| Classe | Alunni | Può andare? |
-|--------|--------|-------------|
-| 1a | < 15 | Sì |
-| **2a (noi)** | **20** | **No** |
-| 3a | < 15 | Sì |
-| 4a | 14 + alunni H | No |
-| 5a | < 15 | Sì |
+<table>
+<thead>
+<tr><th>Classe</th><th>Alunni</th><th>Può andare?</th></tr>
+</thead>
+<tbody>
+<tr><td>1ª</td><td>&lt; 15</td><td>✅ Sì</td></tr>
+<tr class="bloccata"><td><strong>2ª (noi)</strong></td><td><strong>20</strong></td><td>❌ No</td></tr>
+<tr><td>3ª</td><td>&lt; 15</td><td>✅ Sì</td></tr>
+<tr class="bloccata"><td><strong>4ª</strong></td><td><strong>14 + alunni H</strong></td><td>❌ No</td></tr>
+<tr><td>5ª</td><td>&lt; 15</td><td>✅ Sì</td></tr>
+</tbody>
+</table>
 
 Questo problema **non è mai esistito prima**. Lo scuolabus è stato usato regolarmente per anni — fino a novembre 2025 compreso — per uscite identiche, senza che nessun Dirigente sollevasse la questione. Da quest'anno, improvvisamente, non si può più.
 
