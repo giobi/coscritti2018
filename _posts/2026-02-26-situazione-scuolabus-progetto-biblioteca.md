@@ -7,93 +7,33 @@ excerpt: "Aggiornamento sulla problematica che impedisce alla nostra classe di p
 image: assets/images/m02Dk8J.png
 ---
 
-## La situazione in breve
+Ciao a tutti,
 
-Come rappresentante di classe, ritengo importante aggiornarvi su una problematica che riguarda direttamente i nostri bambini.
+vi aggiorno su una situazione che riguarda la nostra classe. In breve: **non parteciperemo al progetto biblioteca** perché il Dirigente Scolastico non autorizza l'uso dello scuolabus per classi con più di 15 alunni. Noi siamo in 20. La 4a ha lo stesso problema. Le classi 1a, 3a e 5a invece possono andare.
 
-**La nostra classe non puo partecipare al progetto biblioteca** a causa di un problema organizzativo legato al trasporto con lo scuolabus.
+| Classe | Alunni | Può andare? |
+|--------|--------|-------------|
+| 1a | < 15 | Sì |
+| **2a (noi)** | **20** | **No** |
+| 3a | < 15 | Sì |
+| 4a | 14 + alunni H | No |
+| 5a | < 15 | Sì |
 
----
+Questo problema **non è mai esistito prima**. Lo scuolabus è stato usato regolarmente per anni — fino a novembre 2025 compreso — per uscite identiche, senza che nessun Dirigente sollevasse la questione. Da quest'anno, improvvisamente, non si può più.
 
-## Cosa sta succedendo
+La "soluzione" proposta è che le insegnanti raggiungano la biblioteca **con mezzi propri, fuori dall'orario di servizio**, con il Dirigente che si solleva dalla responsabilità durante il tragitto. In pratica: se un'insegnante fa un incidente andando a portare i nostri figli a un progetto scolastico, sono fatti suoi. Le insegnanti hanno rifiutato, e ci credo.
 
-Lo scuolabus comunale dispone di **un solo posto omologato per adulti** accompagnatori.
+Il risultato è che un progetto **già finanziato dal Comune**, già organizzato con gli operatori della biblioteca, non si farà. Non per mancanza di soldi o di volontà, ma per una decisione amministrativa che fino a ieri non esisteva.
 
-La normativa prevede un rapporto di **1 insegnante ogni 15 alunni**, piu le insegnanti di sostegno per gli alunni che ne necessitano.
+Le insegnanti hanno fatto tutto quello che potevano: richiesta formale, coinvolgimento del Sindaco di Baveno, contestazione scritta della contraddizione con novembre. La segreteria — come già per la questione dell'insegnante di alternativa alla religione, rimasta scoperta per mesi — impiega settimane a rispondere quando risponde. La situazione è arrivata ai sindacati di categoria, che nella scuola pubblica non è una cosa che succede tutti i giorni: significa che le insegnanti hanno esaurito le strade normali.
 
-La nostra classe ha **20 alunni** e necessita quindi di almeno 2 insegnanti accompagnatrici. Con un solo posto adulto disponibile sullo scuolabus, il Dirigente Scolastico ha comunicato che **non e possibile autorizzare il trasporto**.
+Il punto è che non stiamo parlando solo della biblioteca. Ci aspettano altri 3 anni di elementari e 3 di medie con questa gestione. Oggi è lo scuolabus, domani sarà qualcos'altro. Per la nostra classe è il secondo episodio, ma guardando all'istituto nel suo complesso è l'ennesimo ostruzionismo. Le insegnanti stanno facendo un lavoro enorme nonostante gli ostacoli, ma non possiamo contare sul fatto che debbano lottare ogni volta per fare il loro lavoro.
 
----
+Per ora vi chiedo solo di essere informati sulla questione e di sentirvi liberi di chiedere chiarimenti, perché le insegnanti si stanno muovendo in ogni modo possibile.
 
-## Quali classi sono coinvolte
+Vi tengo aggiornati.
 
-| Classe | Alunni | Puo andare? | Motivo |
-|--------|--------|-------------|--------|
-| 1a | < 15 | Si | Basta 1 accompagnatore |
-| **2a (noi)** | **20** | **No** | **Servono 2+ accompagnatori** |
-| 3a | < 15 | Si | Basta 1 accompagnatore |
-| 4a | 14 + alunni H | No | Serve sostegno in accompagnamento |
-| 5a | < 15 | Si | Basta 1 accompagnatore |
-
-Le classi 2a e 4a sono di fatto **escluse** dal progetto biblioteca e da qualsiasi uscita didattica che richieda lo scuolabus.
-
----
-
-## Cosa non torna
-
-A **novembre 2025**, con le stesse identiche modalita, lo scuolabus e stato regolarmente autorizzato per un'uscita della classe 4a. Le condizioni non sono cambiate, ma la decisione si.
-
-Le insegnanti hanno formalmente chiesto chiarimenti al Dirigente su questa contraddizione. Ad oggi non hanno ricevuto una risposta che giustifichi il cambio di rotta.
-
----
-
-## Cosa e stato fatto finora
-
-1. Le insegnanti hanno presentato **richiesta formale** al Dirigente Scolastico
-2. Il **Sindaco di Baveno** e stato coinvolto e ha avuto un incontro con il Dirigente
-3. La risposta del Dirigente (21 febbraio 2026) non risolve il problema: propone che le insegnanti si spostino con mezzi propri, sollevandole dal servizio durante il tragitto
-4. Le insegnanti hanno ritenuto questa soluzione **inadeguata e potenzialmente non regolare**
-5. La questione e stata portata ai **sindacati di categoria**
-
----
-
-## Cosa significa per i nostri bambini
-
-Se la situazione non si sblocca:
-
-- **Niente progetto biblioteca** per quest'anno
-- **Qualsiasi uscita didattica** che richieda lo scuolabus sara preclusa alla nostra classe
-- Lo stesso problema si ripresentera per la futura 1a (quando superera i 15 alunni) e per la futura 4a
-
----
-
-## Cosa possiamo fare come genitori
-
-Per ora vi chiedo di:
-
-1. **Essere informati** - sapere cosa sta succedendo e perche
-2. **Parlarne** - se avete contatti con genitori di altre classi nella stessa situazione (in particolare la 4a)
-3. **Segnalarmi** qualsiasi comunicazione ufficiale riceviate dalla scuola sull'argomento
-
-Se la situazione non si risolvera in tempi ragionevoli, valuteremo insieme i prossimi passi, che potrebbero includere una **comunicazione formale congiunta dei genitori** al Dirigente Scolastico e, se necessario, all'Ufficio Scolastico Provinciale.
-
----
-
-## Timeline
-
-| Data | Cosa |
-|------|------|
-| Novembre 2025 | Scuolabus autorizzato per uscita classe 4a |
-| Gennaio 2026 | Richiesta scuolabus per progetto biblioteca classe 2a |
-| Gennaio 2026 | Dirigente nega autorizzazione |
-| Febbraio 2026 | Insegnanti contestano la contraddizione con novembre |
-| 2 febbraio 2026 | Sindaco di Baveno coinvolto |
-| 21 febbraio 2026 | Risposta Dirigente: proposta inadeguata |
-| 26 febbraio 2026 | Situazione ancora aperta |
-
----
-
-Vi terro aggiornati su qualsiasi sviluppo. Come sempre, per domande o segnalazioni potete scrivermi direttamente.
+Giobi
 
 <footer class="post-footer">
     <div class="post-actions">
