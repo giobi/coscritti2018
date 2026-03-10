@@ -103,6 +103,7 @@ Dopo i tre incontri teorici ci sarà una **prova pratica** tutti insieme al camp
 |------|------|------|
 | <span class="date-badge">26 mar</span> | **Preparazione Burki** | La referente viene in classe — attività giocose e conoscitive |
 | <span class="date-badge">31 mar</span> | **Uscita a Cannero** | Gita di una giornata (1ª, 2ª e parte della 4ª) |
+| <span class="date-badge">27 mag</span> | **Uscita al Burki** | Gita di fine anno — tutte le classi, spagnoli compresi. Si cammina! |
 
 <div class="info-banner">
 <i class="fas fa-info-circle"></i> La classe prima <strong>non fa le prove INVALSI</strong> — quelle riguardano solo la seconda e la quinta. Un pensiero in meno!
