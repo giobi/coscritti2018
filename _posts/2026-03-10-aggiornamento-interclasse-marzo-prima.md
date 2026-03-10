@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Interclasse Marzo — Classe 2ª"
+title: "Interclasse Marzo — Classe 1ª"
 date: 2026-03-10
 category: Comunicazioni
-excerpt: "Riepilogo interclasse del 9 marzo per la nostra classe: progetti, uscite, INVALSI e calendario fine anno."
+excerpt: "Riepilogo interclasse del 9 marzo per la classe prima: progetti, uscite e calendario fine anno."
 image: assets/images/riunione-genitori-2025-11.png
 ---
 
@@ -66,7 +66,7 @@ image: assets/images/riunione-genitori-2025-11.png
 
 Ciao a tutti,
 
-ecco il riepilogo dell'interclasse di ieri sera. Qui sotto trovate **solo le cose che riguardano la nostra classe** (2ª).
+ecco il riepilogo dell'interclasse di ieri sera. Qui sotto trovate **solo le cose che riguardano la classe prima**.
 
 ## 🎵 Progetti in corso
 
@@ -85,9 +85,9 @@ ecco il riepilogo dell'interclasse di ieri sera. Qui sotto trovate **solo le cos
     </div>
 </div>
 
-### Educazione Stradale — il nostro gruppo
+### Educazione Stradale — il vostro gruppo
 
-La nostra classe è nel **primo gruppo** (1ª e 2ª), orario **9:00 – 10:30**, per tre appuntamenti da un'ora e mezza:
+La classe prima è nel **primo gruppo** (1ª e 2ª), orario **9:00 – 10:30**, per tre appuntamenti da un'ora e mezza:
 
 | Data | Chi interviene |
 |------|----------------|
@@ -97,25 +97,15 @@ La nostra classe è nel **primo gruppo** (1ª e 2ª), orario **9:00 – 10:30**,
 
 Dopo i tre incontri teorici ci sarà una **prova pratica** tutti insieme al campo sportivo di Baveno (Piazzale Giordano), opportunamente recintato.
 
-## 🏔️ Uscite e Gite — le nostre date
+## 🏔️ Uscite e Gite — le vostre date
 
 | Data | Cosa | Note |
 |------|------|------|
 | <span class="date-badge">26 mar</span> | **Preparazione Burki** | La referente viene in classe — attività giocose e conoscitive |
 | <span class="date-badge">31 mar</span> | **Uscita a Cannero** | Gita di una giornata (1ª, 2ª e parte della 4ª) |
 
-## 📝 Prove INVALSI
-
-La nostra classe fa le INVALSI. Le date:
-
-| Data | Materia |
-|------|---------|
-| **5 maggio** | Inglese |
-| **6 maggio** | Italiano |
-| **7 maggio** | Matematica |
-
 <div class="info-banner">
-<i class="fas fa-info-circle"></i> <strong>Per chi non lo sapesse:</strong> le INVALSI sono prove nazionali che servono a valutare l'andamento generale dell'istituto. <strong>Non fanno media e non finiscono in pagella.</strong> Per i bambini non cambia nulla — niente ansia, mi raccomando! Le insegnanti hanno già iniziato a far compilare il foglio INVALSI.
+<i class="fas fa-info-circle"></i> La classe prima <strong>non fa le prove INVALSI</strong> — quelle riguardano solo la seconda e la quinta. Un pensiero in meno!
 </div>
 
 ## 🎉 Fine anno
