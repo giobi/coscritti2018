@@ -51,17 +51,17 @@ image: assets/images/riunione-genitori-2025-11.png
 }
 </style>
 
-Dopo aver chiamato diverse di voi e aver parlato più volte con le maestre, vi scrivo la mia analisi il più possibile agnostica su quello che è emerso nelle ultime settimane.
+Dopo aver chiamato diverse di voi e aver parlato più volte con le maestre, vi scrivo la mia analisi il più possibile agnostica su quello che è emerso nelle ultime settimane — se non vi piace, mi avete votato voi e ora ve la sciroppate lo stesso :D
 
 Il metodo che la maestra sta usando si chiama didattica del *number sense*: l'obiettivo è costruire la comprensione del numero — capire cosa succede quando moltiplichi, non solo eseguire un procedimento meccanico. Le operazioni in colonna sono il modo in cui abbiamo imparato noi, ma la pedagogia è andata avanti negli ultimi 30 anni, anche se sicuramente alcuni insegnanti insegnano ancora come negli anni '90. In fondo al post trovate un paio di link per chi volesse approfondire.
 
-È normale che ci siano bambini più avanti e più indietro — è così in qualsiasi classe, con qualsiasi metodo. Da quello che vedo io, e cerco di essere il più imparziale possibile, queste mi sembrano maestre che tengono molto ai bambini, e se devo dire forse soprattutto a quelli più in difficoltà. Nel caso catastrofico in cui una grande fetta della classe non capisse o non ce la facesse, sarebbero loro le prime a interrogarsi e a segnalare la cosa — è il loro lavoro, e lo fanno con attenzione.
+È normale che ci siano bambini più avanti e più indietro — è così in qualsiasi classe, con qualsiasi metodo. Da quello che vedo io, e cerco di essere il più imparziale possibile, queste mi sembrano maestre che tengono molto ai bambini, e se devo dire forse soprattutto a quelli più in difficoltà. Nel caso catastrofico in cui una grande fetta della classe non capisse o non ce la facesse, sarebbero loro le prime a interrogarsi e a segnalare la cosa 
 
 Sui compiti a casa: i compiti li devono fare i bambini, da soli. Se non capiscono un esercizio, va bene. Se sbagliano, va bene. Se se ne dimenticano, devono capire da soli che non va bene. Quando un genitore fa i compiti al posto del figlio o lo guida passo passo, la maestra il giorno dopo non vede gli errori reali e non sa su cosa lavorare. E il bambino perde l'occasione di sbagliare, che è il modo in cui si impara. Se hanno bisogno ci siamo — ma il nostro ruolo è esserci quando chiedono aiuto, non prevenire ogni errore.
 
 Sulla richiesta di assemblea straordinaria con tutto il corpo insegnante: le maestre hanno spiegato che quel tipo di assemblea è un passaggio formale che va registrato a livello amministrativo e si convoca in casi particolarmente gravi, tipicamente problemi seri di condotta. Usarlo per una questione di metodo didattico sarebbe sproporzionato. Detto questo, le insegnanti sono sempre disponibili a parlare con qualsiasi genitore: basta scrivere una nota sul diario dei bambini e si fissa un colloquio. Se avete dubbi sul metodo, sul rendimento, su qualsiasi cosa — il colloquio individuale è la strada giusta.
 
-Ho fatto del mio meglio, spero che vi vada bene.
+
 
 Giobi
 
