@@ -197,7 +197,7 @@ image: assets/images/colloqui-genitori.png
 
 ## Colloqui Genitori-Insegnanti
 
-I **colloqui individuali** con le insegnanti sono previsti per **lunedì 14 aprile 2026**, dalle **15:00 alle 17:40**.
+I **colloqui individuali** con le insegnanti sono previsti per **lunedì 14 aprile 2026**, dalle **14:00 alle 16:40**.
 
 Ogni colloquio dura **8 minuti**. Seleziona la fascia oraria preferita inserendo il cognome del bambino.
 
@@ -250,10 +250,10 @@ const urlParams = new URLSearchParams(window.location.search);
 const isAdmin = urlParams.get('command') === 'admin';
 
 const FASCE = [
-    '15.00-15.08', '15.08-15.16', '15.16-15.24', '15.24-15.32', '15.32-15.40',
-    '15.40-15.48', '15.48-15.56', '15.56-16.04', '16.04-16.12', '16.12-16.20',
-    '16.20-16.28', '16.28-16.36', '16.36-16.44', '16.44-16.52', '16.52-17.00',
-    '17.00-17.08', '17.08-17.16', '17.16-17.24', '17.24-17.32', '17.32-17.40'
+    '14.00-14.08', '14.08-14.16', '14.16-14.24', '14.24-14.32', '14.32-14.40',
+    '14.40-14.48', '14.48-14.56', '14.56-15.04', '15.04-15.12', '15.12-15.20',
+    '15.20-15.28', '15.28-15.36', '15.36-15.44', '15.44-15.52', '15.52-16.00',
+    '16.00-16.08', '16.08-16.16', '16.16-16.24', '16.24-16.32', '16.32-16.40'
 ];
 
 let disponibilita = {};
