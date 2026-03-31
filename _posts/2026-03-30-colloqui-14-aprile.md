@@ -197,7 +197,7 @@ image: assets/images/colloqui-genitori.png
 
 ## Colloqui Genitori-Insegnanti
 
-I **colloqui individuali** con le insegnanti sono previsti per **lunedì 14 aprile 2026**, dalle **14:00 alle 16:40**.
+I **colloqui individuali** con le insegnanti sono previsti per **martedì 14 aprile 2026**, dalle **14:00 alle 16:40**.
 
 Ogni colloquio dura **8 minuti**. Seleziona la fascia oraria preferita inserendo il cognome del bambino.
 
