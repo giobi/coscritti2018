@@ -90,8 +90,7 @@ Il pagamento verrà comunicato <strong>solo se l'uscita è confermata</strong> (
 |------|--------|------|
 | <span class="date-badge">22 mag</span> | **Giro d'Italia** | Strada chiusa ~12:30–13:00. Scuolabus opera regolarmente. Chi viene a prendere i bambini a mezzogiorno può farlo senza problemi. |
 | <span class="date-badge">22 mag</span> | **Spettacolo musicale** | Ore 18:00 al campetto della scuola. Ritrovo alle 17:30. Durata circa 1 ora. Invitati anche nonni e cugini! Se piove → palestra di Baveno. |
-| <span class="date-badge">25 mag</span> | **Niente scuola** | Elezioni — giornata di assenza confermata. |
-| <span class="date-badge">26 mag</span> | **Da definire** | Dipende da come vengono usati i seggi. Vi faremo sapere. |
+| <span class="date-badge">25–26 mag</span> | **Elezioni** | Non è ancora chiaro se saranno uno o entrambi i giorni di assenza. Vi aggiorniamo appena sappiamo. |
 | <span class="date-badge">28 mag</span> | **Giornata sportiva** | Campo sportivo di Baveno. **Portate i bambini direttamente lì** (non a scuola). Recupero anche direttamente lì, sia chi esce all'1 sia alle 2. Chi fa doposcuola viene portato alla mensa dalla scuola. In caso di maltempo: tutto spostato al **4 giugno**, stessa modalità. |
 | <span class="date-badge">5 giu</span> | **Trenino** | Le classi 1ª, 2ª e 3ª faranno un giro con il trenino/scuolabus tra la scuola e Baveno. |
 | <span class="date-badge">8–9 giu</span> | **Baby sferiolo game** | Attività sul lungolago durante l'orario scolastico (un giorno solo, tra l'8 e il 9 — vi diremo quale). I genitori sono benvenuti come spettatori. |
